@@ -10,7 +10,7 @@ function openSocial(type) {
 
     switch (type) {
         case 'discord':
-            url = 'https://discord.com/users/1120839953090363402';
+            url = 'https://www.tiktok.com/@hazarmx';
             break;
         case 'github':
             url = 'https://www.instagram.com/hazmeics/';
