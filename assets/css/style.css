@@ -412,3 +412,61 @@ p,
     user-select: none;
     pointer-events: none; /* nu încurcă click-urile */
 }
+
+.name-wrapper {
+    white-space: nowrap;          /* ține numele pe un singur rând */
+}
+
+.amx-block {
+    white-space: nowrap;          /* păstrează "AMX" lipit */
+}
+
+/* MOBILE TWEAKS */
+@media (max-width: 768px) {
+    .box {
+        width: 92%;
+        height: auto;
+        padding-top: 28px;
+        padding-bottom: 24px;
+    }
+
+    .header {
+        position: static;
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+
+    .footer {
+        position: static;
+        margin-top: 20px;
+        margin-bottom: 4px;
+        gap: 28px;
+    }
+
+    .name-wrapper {
+        font-size: 1.8rem;      /* mai mic pe telefon */
+        text-align: center;
+        column-gap: 6px;
+    }
+
+    .subtext {
+        font-size: 0.9rem;
+    }
+
+    .social-logo {
+        height: 64px;           /* iconițe un pic mai mici */
+    }
+
+    #corner-clock {
+        left: 14px;
+        bottom: 14px;
+        font-size: 14px;
+        padding: 4px 10px;
+    }
+
+    #copyright {
+        right: 14px;
+        bottom: 14px;
+        font-size: 13px;
+    }
+}
