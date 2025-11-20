@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <!-- charset + mobile layout -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- seo + discord embed -->
+    <meta content="hazar.me" property="og:title" />
+    <meta content="@destept" property="og:description" />
+    <meta content="https://hazar.me" property="og:url" />
+    <meta content="@destept" name="description" />
+    <meta content="#b145bf" data-react-helmet="true" name="theme-color" />
+
+    <!-- title + favicon -->
+    <title>hazar.me | welcome</title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/rain.css" />
+
+    <!-- libs -->
+    <script src="https://unpkg.com/typeit@8.0.1/dist/index.umd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Ecran INTRO -->
+    <div class="intro">
+        <p id="intro-text"></p>
+    </div>
+
+    <!-- Background gif + ploaie / thunder -->
+    <div class="bg-image thunder" style="display: none">
+        <canvas id="canvas1"></canvas>
+        <canvas id="canvas2"></canvas>
+    </div>
+
+    <!-- Stele cazatoare -->
+    <div id="shooting-stars">
+        <canvas id="constellation"></canvas>
+    </div>
+
+    <div id="corner-clock" class="timebox">
+        <span id="corner-time">--:--:--</span>
+    </div>
+
+    <!-- Ecran principal -->
+    <div class="main" style="display: none">
+        <div class="box">
+            <div class="header">
+                <div class="maintext name-wrapper">
+                    <span class="name-left">Nikves</span>
+                    <span class="amx-block">"<a href="https://namemc.com/AMX" target="_blank" class="amx-highlight">AMX</a>"</span>
+                    <span class="name-right">Hazar</span>
+                </div>
+
+                <span class="subtext">
+                    <p id="subtext" class="sub-glitch"></p>
+                </span>
+            </div>
+
+
+            <div class="footer">
+                <img src="assets/img/discord-512.png"
+                     class="social-logo"
+                     onclick="openSocial('discord')" />
+
+                <img src="assets/img/github-512.png"
+                     class="social-logo"
+                     onclick="openSocial('github')" />
+
+                <img src="assets/img/twitter-512.png"
+                     class="social-logo"
+                     onclick="openSocial('twitter')" />
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="assets/js/rain.js"></script> <!-- folosește ce aveai deja -->
+    <script src="assets/js/script.js"></script>
+    <div id="copyright">© 2025 hazar.me</div>
+</body>
+</html>
